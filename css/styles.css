@@ -28,7 +28,7 @@ body, html {
     width: 900px;
 
     background-color: orange;
-    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 10% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
 }
 
 #content {
@@ -67,4 +67,31 @@ body, html {
 
 #credit a {
     color: grey;
+}
+
+@media (max-width: 900px) {
+    body, html {
+        font-size: 14px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-position-x: right;
+    }
+
+    #big-shape {
+        width: 100%;
+        margin-top: 20vh;
+        clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 50px);
+        padding-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    #content {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #credit {
+        position: relative;
+    }
 }
